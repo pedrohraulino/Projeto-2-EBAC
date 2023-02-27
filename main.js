@@ -4,8 +4,6 @@ let contReprovado = 0;
 let contAprovado = 0;
 let mediaGeral = 0;
 const materias = []
-const verTable  = document.querySelector('table')
-const verFoot = document.querySelector('tfoot')
 const corpoDaTabela = document.querySelector('tbody');
 
 form.addEventListener('submit', function(e){
@@ -13,18 +11,17 @@ form.addEventListener('submit', function(e){
 
     adicionarLinhasMaisMedia()
     
-    verTabela(verFoot,verTable,corpoDaTabela)
+    verTabela()
 
-    atualizarRodape(contReprovado, contAprovado, mediaGeral)
+    atualizarRodape()
 })
 
-function verTabela(verFoot,verTable,corpoDaTabela){
+function verTabela(){
+    const verTable  = document.querySelector('table')
     verTable.style.display = "table"
-    verFoot.style.display = "table-footer-group"
-    corpoDaTabela.style.display = "table-row-group";
 }
 
-function atualizarRodape(contReprovado, contAprovado, mediaGeral) {
+function atualizarRodape() {
     const rodapeDaTabela = document.querySelector('tfoot tr td');
     rodapeDaTabela.innerHTML = `Sua média geral foi:<span style="color: blue;"> ${(mediaGeral / (contAprovado + contReprovado)).toFixed(1)}</span>. Total de aprovações: <span style="color: #00A991;">${contAprovado}</span>. Total de reprovações: <span style="color:red;">${contReprovado}</span> `;
 }
