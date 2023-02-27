@@ -16,24 +16,6 @@ form.addEventListener('submit', function(e){
     atualizarRodape()
 })
 
-function verTabela(){
-    const verTable  = document.querySelector('table')
-    verTable.style.display = "table"
-}
-
-function atualizarRodape() {
-    const rodapeDaTabela = document.querySelector('tfoot tr td');
-    rodapeDaTabela.innerHTML = `Sua média geral foi:<span style="color: blue;"> ${(mediaGeral / (contAprovado + contReprovado)).toFixed(1)}</span>. Total de aprovações: <span style="color: #00A991;">${contAprovado}</span>. Total de reprovações: <span style="color:red;">${contReprovado}</span> `;
-}
-
-function resetarFormulário(nomeMateria,notaUm,notaDois,notaTres,notaQuatro){
-    nomeMateria.value = '';
-    notaUm.value = '';
-    notaDois.value = '';
-    notaTres.value = '';
-    notaQuatro.value = '';
-}
-
 function adicionarLinhasMaisMedia(){
     const nomeMateria = document.getElementById('nome-materia')
     const notaUm = document.getElementById('nota-um')
@@ -69,4 +51,14 @@ function adicionarLinhasMaisMedia(){
 
 }
 resetarFormulário(nomeMateria,notaUm,notaDois,notaTres,notaQuatro)
+}
+
+function verTabela(){
+    const verTable  = document.querySelector('table')
+    verTable.style.display = "table"
+}
+
+function atualizarRodape() {
+    const rodapeDaTabela = document.querySelector('tfoot tr td');
+    rodapeDaTabela.innerHTML = `Sua média geral foi:<span style="color: blue;"> ${(mediaGeral / (contAprovado + contReprovado)).toFixed(1)}</span>. Total de aprovações: <span style="color: #00A991;">${contAprovado}</span>. Total de reprovações: <span style="color:red;">${contReprovado}</span> `;
 }
