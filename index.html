@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Médias</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Médias</h1>
+        <img src="./img/estudante.png" alt="estudante fazendo sinal de paz">
+        <p>Adicione sua disciplinas e as respectivas notas para calcular a média e descobrir se você foi aprovado. Além disso, você pode criar uma lista completa com todas as suas disciplinas e gerar um boletim geral.</p>
+    </header>
+    <form id="form-notas">
+        <div class="form">
+            <label for="materia">Nome da disciplina</label>
+            <input id="nome-materia" type="text" name="materia" required placeholder="Ex: Português">
+        </div>
+        <div class="form_notas">
+            <div class="form" >
+                <label for="n1">N1</label>
+                <input id="nota-um" type="number" name="n1" required placeholder="Ex: 7" min="0" max="10">
+            </div>
+            <div class="form n2">
+                <label for="n2">N2</label>
+                <input id="nota-dois" type="number" name="n2" required placeholder="Ex: 7" min="0" max="10">
+            </div>
+            <div class="form n3">
+                <label for="n3">N3</label>
+                <input id="nota-tres" type="number" name="n3" required placeholder="Ex: 7" min="0" max="10">
+            </div>
+            <div class="form">
+                <label for="n4">N4</label>
+                <input id="nota-quatro" type="number" name="n4" required placeholder="Ex: 7" min="0" max="10">
+            </div>
+        </div>
+        <button type="submit">Adicionar +</button>
+    </form>
+    <table style="display: none;">
+        <thead>
+            <tr>
+                <th>
+                    Disciplina
+                </th>
+                <th>
+                    N1
+                </th>
+                <th>
+                    N2
+                </th>
+                <th>
+                    N3
+                </th>
+                <th>
+                    N4
+                </th>
+                <th>
+                    Média
+                </th>
+                <th>
+                    Situação
+                </th>
+            </tr>
+        </thead>
+        <tbody style="display: none;">         
+        </tbody>
+        <tfoot style="display: none;">
+            <tr>
+                <td colspan="7">
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <footer>
+        <p>
+            Desenvolvido por @pedrohraulino
+        </p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 1440px;
+    margin: auto;
+    padding: 0 135px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #FCFCFC;
+    color: #1E1E1E;
+}
+h1{
+    font-size: 50px;
+    color: #00A991;
+    font-weight:900;
+    line-height: 100%;
+}
+header img{
+    padding: 40px 0;
+}
+header p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 440;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+label{
+    font-size: 25px;
+    font-weight: bold
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form_notas{
+    display: flex;
+    text-align: center;    
+}
+button{
+    width: 170px;
+    height: 56px;
+    align-items: baseline;
+    font-size: 14px;
+    background-color: #00A991;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.n2{
+    margin-left: 30px;
+    margin-right: 15px;
+}
+.n3{
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+input{
+    height: 56px;
+    width: 70px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: #E6F6F4;
+    text-align: center;
+    font-size: 16px;
+}
+::placeholder{
+    text-align: center;
+}
+
+form > div > input{
+    width: 370px;
+    text-align: left;
+    padding-left: 12px;
+}
+form > div > input::placeholder{
+    text-align: left;   
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background-color: #00A991;
+    color: white;
+    font-size: 25px;
+    height: 54px;
+}
+
+tbody{
+    font-size: 25px;
+    height: 54px;
+}
+th{
+    border-bottom: 3px solid #00A991;
+    font-weight: 200;
+}
+tfoot{
+    font-size: 25px;
+    height: 80px;
+}
+tr td{
+    text-align: center;
+}
+tr th:first-child{
+    text-align: left;
+    padding-left: 20px;
+    width: 25%;
+}
+tr th:last-child{
+    text-align: center;
+    width: 15%;
+}
+tr th:nth-child(6){
+    width: 25%;
+}
+
+tbody tr td:first-child{
+    text-align: left;
+    padding-left: 20px;
+}
+tr td:last-child{
+    text-align: center;
+}
+
+tfoot tr td{
+    text-align: center !important;
+    
+}
+
+
+footer{
+    text-align: center;
+    padding: 40px 0 ;
+    color: #aaaaaa ;
+    font-size: 20px;
+}
