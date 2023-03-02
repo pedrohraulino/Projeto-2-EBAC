@@ -24,7 +24,7 @@ function adicionarLinhasMaisMedia(){
     const notaQuatro = document.getElementById('nota-quatro')
     const media = (parseFloat(notaUm.value) + parseFloat(notaDois.value) + parseFloat(notaTres.value) + parseFloat(notaQuatro.value))/4
     if(materias.includes(nomeMateria.value)){
-        alert(`teste`)
+        alert(`A matéria ${nomeMateria.value} já foi adicionada`)
     }
     else{
     materias.push(nomeMateria.value)
@@ -51,6 +51,14 @@ function adicionarLinhasMaisMedia(){
 
 }
 resetarFormulário(nomeMateria,notaUm,notaDois,notaTres,notaQuatro)
+}
+
+function resetarFormulário(nomeMateria,notaUm,notaDois,notaTres,notaQuatro){
+    nomeMateria.value = '';
+    notaUm.value = '';
+    notaDois.value = '';
+    notaTres.value = '';
+    notaQuatro.value = '';
 }
 
 function verTabela(){

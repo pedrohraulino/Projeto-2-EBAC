@@ -90,6 +90,11 @@ input{
     text-align: center;
 }
 
+input:focus{
+    outline: none;
+    border: 2px solid #00A991;
+}
+
 form > div > input{
     width: 370px;
     text-align: left;
@@ -154,6 +159,10 @@ tr td:last-child{
 tfoot tr td{
     text-align: center !important;
     
+}
+
+tr:nth-child(even){
+    background-color: #E6F6F4;
 }
 
 
