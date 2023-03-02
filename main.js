@@ -68,5 +68,5 @@ function verTabela(){
 
 function atualizarRodape() {
     const rodapeDaTabela = document.querySelector('tfoot tr td');
-    rodapeDaTabela.innerHTML = `Sua média geral foi:<span style="color: blue;"> ${(mediaGeral / (contAprovado + contReprovado)).toFixed(1)}</span>. Total de aprovações: <span style="color: #00A991;">${contAprovado}</span>. Total de reprovações: <span style="color:red;">${contReprovado}</span> `;
+    rodapeDaTabela.innerHTML = `Sua média geral foi:<span style="color: #1178A8;"> ${(mediaGeral / (contAprovado + contReprovado)).toFixed(1)}</span>. Total de aprovações: <span style="color: #00A991;">${contAprovado}</span>. Total de reprovações: <span style="color:red;">${contReprovado}</span> `;
 }
